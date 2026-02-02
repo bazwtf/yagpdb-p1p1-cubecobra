@@ -45,6 +45,8 @@ Each invocation generates a new CubeCobra sample pack, suitable for immediate P1
 
 Outputs a single CubeCobra sample pack link.
 
+![Simple command output](p1p1simple.jpg)
+
 ### Custom Command
 
 ```gotemplate
@@ -69,6 +71,7 @@ Outputs a rich Discord embed including:
 
 **Recommended for active P1P1 discussion.**
 
+![Embedded command output](p1p1embed.jpg)
 ### Custom Command
 
 ```gotemplate
