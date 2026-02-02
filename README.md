@@ -1,9 +1,3 @@
-Below is an **updated README.md** with both versions documented clearly. The commands are explicitly differentiated as **Simple** and **Embedded**, and the embedded version includes the **inline pack preview image**.
-
-You can replace your existing README with this verbatim.
-
----
-
 # YAGPDB CubeCobra P1P1 Command
 
 A custom **YAGPDB** command that generates a **random CubeCobra sample pack URL** for Pack 1 Pick 1 (P1P1) discussions on Discord.
@@ -12,8 +6,6 @@ Two versions are provided:
 
 * **Simple** — outputs a plain URL
 * **Embedded** — outputs a rich embed with an inline pack preview image (recommended)
-
----
 
 ## ✨ What This Does
 
@@ -31,15 +23,11 @@ Example:
 
 Each invocation generates a new CubeCobra sample pack, suitable for immediate P1P1 discussion.
 
----
-
 ## 🧩 Requirements
 
 * A Discord server with **YAGPDB** installed
 * Permission to create **Custom Commands**
 * A valid **CubeCobra cube ID**
-
----
 
 ## ⚙️ Setup Instructions (Common)
 
@@ -53,13 +41,11 @@ Each invocation generates a new CubeCobra sample pack, suitable for immediate P1
    * **Prefix:** your server’s normal prefix (e.g. `!`)
 5. Choose **one** of the implementations below
 
----
-
-## 🧱 Simple Version (Plain URL)
+## 📝 Simple Version (Plain URL)
 
 Outputs a single CubeCobra sample pack link.
 
-### Response
+### Custom Command
 
 ```gotemplate
 {{ if lt (len .CmdArgs) 1 }}
@@ -72,8 +58,6 @@ https://cubecobra.com/cube/samplepack/{{$cube}}/{{$pack}}
 {{ end }}
 ```
 
----
-
 ## 🖼️ Embedded Version (With Pack Preview)
 
 Outputs a rich Discord embed including:
@@ -85,7 +69,7 @@ Outputs a rich Discord embed including:
 
 **Recommended for active P1P1 discussion.**
 
-### Response
+### Custom Command
 
 ```gotemplate
 {{ if lt (len .CmdArgs) 1 }}
@@ -114,8 +98,6 @@ Outputs a rich Discord embed including:
 {{ end }}
 ```
 
----
-
 ## 🧠 How It Works
 
 * `.CmdArgs` captures the cube ID provided by the user
@@ -127,8 +109,6 @@ Outputs a rich Discord embed including:
   * the preview image endpoint
 * The embedded version explicitly sends the embed using `sendMessage`
 
----
-
 ## 🔍 Notes
 
 * Only the **first argument** is used
@@ -136,15 +116,11 @@ Outputs a rich Discord embed including:
 * A new pack is generated on every invocation
 * The embedded version requires the bot to have **Embed Links** permission
 
----
-
 ## ☕ Buy Me a Coffee
 
-If you find this useful you can buy me a coffee:
+If you find this useful and want to support my work:
 
 👉 [https://ko-fi.com/bazwtf](https://ko-fi.com/bazwtf)
-
----
 
 ## 📜 Licence
 
@@ -152,3 +128,4 @@ This project is released into the public domain under **The Unlicense**.
 
 You are free to use, modify, distribute, and do anything you like with it, with or without attribution.
 
+If you want to go even further (very airy layout, narrower sections, or a table-of-contents-friendly version), I can tune the spacing exactly to your taste.
